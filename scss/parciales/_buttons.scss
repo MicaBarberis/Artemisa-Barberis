@@ -1,0 +1,27 @@
+.btn-outline-success:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.btn-outline-success:hover {
+    color: black;
+    border-color:$colorSecundario;
+    background-color: $colorPrincipal;
+}
+
+.btn:hover {
+    color:#ffffff;
+    border-color:$colorSecundario;
+}
+.btn-primary:hover {
+    background-color: $colorPrincipal;
+    color: #ffffff;
+}
+
+.btn {
+    background-color: $colorSecundario;
+    color: #000000;
+    margin-left: 1.2rem;
+    border: 0;
+    font-size: 12pt;
+}

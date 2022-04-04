@@ -1,0 +1,325 @@
+    /* MOVIL INDEX*/
+@media (min-width: 320px) and (max-width: 667px) {
+    .section-informative {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 1fr 1fr 1fr;
+        background-color: rgb(198, 201, 200);
+        width:auto;
+        height: auto;
+        text-align: center;
+        padding: 1px;
+        margin-right: 10px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        
+        &-banner{
+            width:auto;
+            height: auto;
+            text-align: center;
+            padding: 10px;
+            margin-right: 10px;
+            margin-bottom: 2rem; 
+        }
+    }
+    
+    
+.combos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.combosdelmes{
+
+    &__imagen{
+        border-radius: 10px;
+        width:250px;
+
+     @include combosdelmes ($display, $direction, $color, $box, $align, $widht, $padding, $margin, $position, $marginbottom)   
+    }
+}
+    
+    
+    .footer__bem {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 1rem;
+        color: $colorPrincipal;
+        font-family: $tipografiaBody;
+        font-size: 10pt;
+        grid-template-columns: 1;
+    }
+    
+    h3 {
+        display: block;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-top: 1rem;
+        }
+    }
+    
+    
+    
+    /* MOVIL - PRODUCTOS */
+    
+    @media (min-width: 320px) and (max-width: 667px){
+    
+    .row {
+        margin-left: 2rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-open-sider {
+        display: inline-block;
+    }
+    
+    .sidebar {
+        display: inline;
+        padding: 0.5rem 1rem;
+    }
+    
+    #sidebar:target {
+        transform: translateX(0);
+    }
+    
+    .sidebar i {
+        color: $colorPrincipal;
+    }
+    
+    .Product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 1rem;
+        grid-row-gap: 40px;
+        grid-column-gap: 10px;
+    } 
+    
+    .Options {
+        display: flex;
+        flex-direction: column;
+        background-color:$colorSecundario;
+        border: 5px $colorPrincipal;
+        box-shadow: 5px 10px 10px #000000;
+        border-radius: 10px;
+        text-align: center;
+        width: 180px;
+        height: 300px;
+        padding: 1rem;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .Product-precio {
+        color: #ffffff;
+        margin-top: 10px;
+        font-size: 27px;
+        }
+    }
+    
+    
+    
+    /* MOVIL - CONTACTOS */
+    
+    @media (min-width: 320px) and (max-width: 667px) {
+    .section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        }
+    }
+    
+    
+    /* MOVIL NOSOTROS */
+    
+    @media (min-width: 320px) and (max-width: 667px) {
+    .col-md-4{
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .row {
+        margin-left: auto;
+    }
+    
+    .card-text2 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .card-text3{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .card-body {
+        padding: 0%;
+        margin-left: 0%;
+    }    
+    }
+    
+     /* MOVIL- MAYORISTAS */
+     @media (min-width: 320px) and (max-width: 667px) {
+     .card-title1{
+        margin-top: 0.5rem;
+        font-size: 16pt;
+    }
+     .card-text{
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .btnm{
+        margin-top: 1rem;
+        margin-left: 40%;
+    }
+    .card-img1{
+        margin-bottom: 3rem;
+        } 
+    }    
+    
+    
+     /* TABLET- INDEX */
+    
+@media (min-width: 668px) and (max-width: 940px)  {
+.combos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 1rem;
+}
+    
+.combosdelmes {
+    &__imagen{
+        border-radius: 10px;
+        width:250px;
+
+    @include combosdelmes ($display, $direction, $color, $box, $align, $widht, $padding, $margin, $position, $marginbottom)  
+    }
+}
+        
+    .footer__bem {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 180px;
+        color: $colorPrincipal;
+        font-family: $tipografiaBody;
+        font-size: 10pt;
+        grid-template-columns: 1;
+    }
+    
+    h3 {
+        display: block;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-top: 1rem;
+        }
+    }
+    
+    
+     /* TABLET - PRODUCTOS */
+    
+    @media (min-width: 668px) and (max-width: 1023px)  {
+    
+    .row {
+        row-gap: 3;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+        
+    .card {
+        margin-bottom: 1rem;
+     }
+     
+     .col-md-3 {
+         width: 30%;
+     }
+    
+     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+         margin-left: 2rem;
+     }
+    }
+    
+    
+    /* TABLET CONTACTO */
+    @media (min-width: 668px) and (max-width: 1023px)  {
+    .ul {
+        list-style-type: none;
+    }
+    
+    .section__contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        margin-right: 2rem;
+        box-sizing: inherit;
+    }
+    
+    .section__imagen {
+        border-radius: 10px;
+        width:300px;
+        margin-right: 1rem;
+        margin-bottom: 40px;
+    }
+    
+    .section__texto {
+        text-align:center;
+        color: $colorPrincipal;
+        justify-content: left;
+        margin-bottom: 40px;
+        margin-left: 1rem;
+    }
+    
+    .section__formulario {
+        margin-left: 800px;
+        margin-bottom: 40px;
+        margin-left: 1rem;
+        flex-direction:inherit;
+        box-sizing: inherit;
+        background-color: #8AA678;
+        border-radius: 10px;
+        text-align: left;
+        width: 250px;
+        height: 300px;
+    }
+    
+    .formulario__titulo {
+        color: white;
+        text-decoration:solid;
+        font-size: 14px;
+        margin:1rem;
+    }
+    
+    .formulario__datos {
+        font-size: 12px;
+        margin: 1rem;
+        }
+    }
+    
+    /* TABLET- NOSOTROS */
+    @media (min-width: 668px) and (max-width: 1023px)  {
+    .card-title1{
+        margin-top: 1rem;
+    }
+    
+    .card-text3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-subtitle{
+        margin-top: auto;
+    }
+    
+    .card-text2{
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }

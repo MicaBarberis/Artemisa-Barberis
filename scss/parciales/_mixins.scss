@@ -1,0 +1,18 @@
+@mixin titulos ($colorPrincipal, $tipografiaTitulos) {
+    $colorPrincipal: #579684;
+    $tipografiaTitulos: 'Playfair Display', serif
+}
+
+@mixin combosdelmes ($display, $direction, $color, $box, $align, $widht, $padding, $margin, $position, $marginbottom) {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorPrincipal;
+    box-shadow: 5px 10px 10px #A3BEB5;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2rem;
+}

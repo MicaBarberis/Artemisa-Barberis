@@ -1,0 +1,40 @@
+footer {
+    background-color:#cee9e0;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    font-size: 10pt;
+
+    &__paginas {
+        text-decoration: none;
+        color: #000000;     
+    }
+    &__bem{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+        text-align: center;
+        margin-top: 1rem;
+        color: #000000;
+        font-family: $tipografiaBody;
+    
+        &__categoria{
+            display: grid;
+            padding: 0.5rem 1rem;
+            text-align: center;
+         }
+        &__img-redes {
+            justify-self: center;
+        }   
+    }
+}
+
+
+.copyright {
+    background-color: $colorPrincipal;
+    text-align: right;
+    font-size: 9pt;
+    color: white;
+    height: 50px;
+    padding-top: 20px;
+    padding-right: 10pt;
+}

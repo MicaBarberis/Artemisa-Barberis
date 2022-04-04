@@ -1,0 +1,51 @@
+.section {
+    background: $colorPrincipal;
+    background: radial-gradient(circle, $colorPrincipal) 0%, rgba(138,166,120,0.7931547619047619 100%);
+    padding-left: 7rem;
+    padding-right: 8rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    color: #ffffff;
+
+    &-informative{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 1fr;
+        background-color: rgb(198, 201, 200);
+        width:auto;
+        height: 120px;
+        text-align: center;
+        padding: 10px;
+        margin-right: 10px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        &-banner{
+            width:auto;
+            height: 120px;
+            text-align: center;
+            padding: 10px;
+            margin-right: 10px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__texto{
+        text-align:center;
+        color:#ffffff;
+        justify-content: right;
+        margin-bottom: 40px;
+        margin-left: 1rem;
+    }
+}
+ 
+
+.h1__contacto {
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+.fa-solid {
+    color: #000000;
+    font-size: 30px      
+    }
