@@ -1,3 +1,8 @@
+$colorPrincipal: #579684;
+$colorSecundario: #8AA678;
+$tipografiaTitulos: 'Playfair Display', serif;
+$tipografiaBody: 'Mulish', sans-serif;
+
 .container-fluid {
     background-color:aliceblue;
 }
@@ -11,7 +16,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $colorPrincipal4;
+    color: $colorPrincipal;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link  {

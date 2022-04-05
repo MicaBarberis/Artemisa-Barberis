@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color:#cee9e0;
     padding-bottom: 1rem;
     padding-top: 0.5rem;
@@ -16,17 +16,19 @@ footer {
         margin-top: 1rem;
         color: #000000;
         font-family: $tipografiaBody;
-    
-        &__categoria{
+    }
+    &__img-redes {
+        justify-self: center;
+    }
+} 
+        
+    .footer-bem-categoria{
             display: grid;
             padding: 0.5rem 1rem;
             text-align: center;
          }
-        &__img-redes {
-            justify-self: center;
-        }   
-    }
-}
+       
+
 
 
 .copyright {

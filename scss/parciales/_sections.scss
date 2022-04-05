@@ -1,6 +1,12 @@
+$colorPrincipal: #579684;
+$colorSecundario: #8AA678;
+$tipografiaTitulos: 'Playfair Display', serif;
+$tipografiaBody: 'Mulish', sans-serif;
+
+
 .section {
     background: $colorPrincipal;
-    background: radial-gradient(circle, $colorPrincipal) 0%, rgba(138,166,120,0.7931547619047619 100%);
+    background: radial-gradient(circle, $colorPrincipal) 0%, ($colorPrincipal,#ffffff);
     padding-left: 7rem;
     padding-right: 8rem;
     padding-bottom: 2rem;
