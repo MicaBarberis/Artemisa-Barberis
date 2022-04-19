@@ -1,65 +1,113 @@
+$colorPrincipal: #579684;
+$colorSecundario: #8AA678;
+$colorTerciario: #A3BEB5;
+$tipografiaTitulos: 'Playfair Display', serif;
+$tipografiaBody: 'Mulish', sans-serif;
+
 /* ÍNDEX */
 .combos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: auto;
-    grid-row-gap: auto;
-    grid-column-gap: -10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
 
 .combosdelmes {
     display: flex;
     flex-direction: column;
-    background-color: $colorPrincipal;
-    box-shadow: 5px 10px 10px #A3BEB5;
+    background-color: $colorTerciario;
     border-radius: 10px;
     text-align: center;
     width: 300px;
-    padding: 1rem;
+    padding: 1.1rem;
     margin: 0 auto;
     position: relative;
     margin-bottom: 2rem;
 
     &__imagen {
-        border-radius: 10px;
+        border-radius:10px;
         width:250px;
     }
 
     &__texto {
+        font-size: 25px;
+        font-family: $tipografiaTitulos;
+        border-radius: 10px;
+        font-weight: 600;
         text-align: center;
         color: white;
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin-top: 1rem;
+        margin-bottom: 0;
 }
 }
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
 
-/* PRODUCTOS */
-
-.card {
+.linea {
     background-color: #A3BEB5;
-    padding: 0.5rem;
-    border: none;
+    border-radius: 10px;
+    margin: 1rem;
+    
 
-    &-precio {
+    &-body {
         font-family: $tipografiaTitulos;
         font-weight: 600;
         font-size: 18pt;
         text-align: center;
-        color:#000000;    
+        color:white;
+        padding: 30px;    
     }
     &-img-top {
-        border-radius: 10px;
-    }
-    &-title1 {
-        font-size: 20pt;
-        color: $colorPrincipal;
-        font-family: $tipografiaTitulos;
-        text-align: center;
-        margin-top: 3rem;
+        border-top: 10px;
+        position: relative;
     }
 }
-    
+
+
+
+/* PRODUCTOS */
+
+.products {
+    border-radius: 20px;
+    border: 1px solid #b7c2bf;
+    margin: 1rem;
+    box-sizing: inherit; 
+    width: 10rem;
+
+    &-nomber {
+        font-family: $tipografiaBody;
+        font-size: 12pt;
+        text-align: center;
+        color: black;
+        padding: 30px;    
+    }
+    &-img-top {
+        width: 199px;
+        border-top-left-radius:  20px;
+        border-top-right-radius: 20px;
+    }
+
+    &-precio{
+        font-family: $tipografiaBody;
+        padding-top: 0.5rem;
+        font-weight: 600;
+        font-size: 20px;
+        color: #8AA678;
+    }
+}
+
+.todosproductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+
 /* NOSOTROS */
 .card-text {
     font-family: $tipografiaBody ;
@@ -87,6 +135,10 @@
     line-height: 1.5rem;
 }
 
+.img-fluid {
+    max-width: 70%;
+}
+
 
 /* MAYORISTAS */
 .card.bg-dark.text-white {
@@ -95,6 +147,7 @@
 
 .card-img1{
     opacity: 20%;
+    max-width: auto;
 }
 
 

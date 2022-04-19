@@ -24,10 +24,12 @@
         
     .footer-bem-categoria{
             display: grid;
-            padding: 0.5rem 1rem;
+            margin-left: 10px;
             text-align: center;
          }
-       
+    /* .categoria__pag{
+        padding-left: none;
+    } */
 
 
 
@@ -39,4 +41,17 @@
     height: 50px;
     padding-top: 20px;
     padding-right: 10pt;
+}
+
+.categoria__paginas{
+    font-family: $tipografiaBody;
+    text-decoration: none;
+    color: black;
+}
+.categoria__paginas:hover{
+    color: $colorPrincipal;
+}
+
+li{
+    display: block;
 }

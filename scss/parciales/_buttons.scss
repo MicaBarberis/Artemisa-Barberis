@@ -1,27 +1,43 @@
+$colorPrincipal: #579684;
+$colorSecundario: #8AA678;
+$colorTerciario: #A3BEB5;
+$tipografiaTitulos: 'Playfair Display', serif;
+$tipografiaBody: 'Mulish', sans-serif;
+
 .btn-outline-success:hover {
     color: #ffffff;
     background-color: #000000;
 }
 
 .btn-outline-success:hover {
-    color: rgb(209, 0, 0);
     border-color:$colorSecundario;
-    background-color: $colorPrincipal;
+    background-color: $colorSecundario;
 }
 
 .btn:hover {
     color:#ffffff;
     border-color:$colorSecundario;
 }
-.btn-primary:hover {
-    background-color: $colorPrincipal;
-    color: #ffffff;
-}
+
 
 .btn {
-    background-color: $colorSecundario;
-    color: #000000;
-    margin-left: 1.2rem;
+    background-color: $colorPrincipal;
+    color: white;
     border: 0;
     font-size: 12pt;
+}
+
+.btn-primary{
+    background-color: $colorTerciario;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.btn-primary:hover{
+    background-color: $colorSecundario;
+    color: white;
 }

@@ -21,9 +21,7 @@ $tipografiaBody: 'Mulish', sans-serif;
         width:auto;
         height: 120px;
         text-align: center;
-        padding: 10px;
-        margin-right: 10px;
-        margin-top: 2rem;
+        padding: 1rem;
         margin-bottom: 2rem;
 
         &-banner{
@@ -31,7 +29,6 @@ $tipografiaBody: 'Mulish', sans-serif;
             height: 120px;
             text-align: center;
             padding: 10px;
-            margin-right: 10px;
             margin-bottom: 2rem;
         }
     }
@@ -53,5 +50,12 @@ $tipografiaBody: 'Mulish', sans-serif;
 
 .fa-solid {
     color: #000000;
-    font-size: 30px      
+    font-size: 30px;
+    margin-bottom: 0.5rem;      
     }
+
+.fa-brands{
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+}

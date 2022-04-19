@@ -1,34 +1,34 @@
 @import "_mixins";
- 
- /* MOVIL INDEX*/
-@media (min-width: 320px) and (max-width: 667px) {
+
+/* MOVIL INDEX*/
+@media (min-width: 320px) and (max-width: 620px) {
     .section-informative {
         background-color: rgb(198, 201, 200);
-        width:auto;
-        height: auto;
         text-align: center;
         padding-top: 2px;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-        
-        &-banner{
-            width:auto;
+       
+
+        &-banner {
+            width: auto;
             height: auto;
             text-align: center;
             padding: 10px;
             margin-right: 10px;
-            margin-bottom: 2rem; 
+            
         }
     }
-    
-    
-.combos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
 
-.combosdelmes{
+
+    .combos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: 3rem;
+    }
+
+    .combosdelmes {
         display: flex;
         flex-direction: column;
         background-color: $colorPrincipal;
@@ -40,13 +40,19 @@
         margin: 0 auto;
         position: relative;
         margin-bottom: 2rem;
-    &__imagen{
-        border-radius: 10px;
-        width:250px;
+
+        &__imagen {
+            border-radius: 10px;
+            width: 250px;
+        }
     }
-}
-    
-    
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: 1fr 1fr 1fr;
+    }
+
     .footer__bem {
         text-align: center;
         margin-top: 1rem;
@@ -55,168 +61,180 @@
         font-size: 10pt;
         grid-template-columns: 1;
     }
-    
+
     h3 {
         display: block;
         font-size: 12pt;
         font-weight: bold;
         margin-top: 1rem;
-        }
     }
-    
-    
-    
-    /* MOVIL - PRODUCTOS */
-    
-    @media (min-width: 320px) and (max-width: 667px){
-    
-    .row {
-        margin-left: 4px;
-        padding: auto;
+
+    .section-informative {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
-    
-    .card {
-        margin-bottom: 1rem;
+
+    .filtro {
+        display: none;
     }
-    
-    .btn-open-sider {
-        display: inline-block;
+}
+
+
+
+
+/* MOVIL - PRODUCTOS */
+
+@media (min-width: 320px) and (max-width: 620px) {
+
+    .filtro {
+        visibility: hidden;
     }
-    
-    .sidebar {
-        display: inline;
-        padding: 0.5rem 1rem;
-    }
-    
-    #sidebar:target {
-        transform: translateX(0);
-    }
-    
-    .sidebar i {
-        color: $colorPrincipal;
-    }
-    
-    .Product {
+
+    .contenedor {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        margin-left: 1rem;
-        grid-row-gap: 40px;
-        grid-column-gap: 10px;
-    } 
-    
-    .Options {
-        display: flex;
-        flex-direction: column;
-        background-color:$colorSecundario;
-        border: 5px $colorPrincipal;
-        box-shadow: 5px 10px 10px #000000;
-        border-radius: 10px;
         text-align: center;
-        width: 180px;
-        height: 300px;
-        padding: 1rem;
-        margin: 0 auto;
-        position: relative;
+        
     }
-    
-    .Product-precio {
-        color: #ffffff;
-        margin-top: 10px;
-        font-size: 27px;
+
+    .todosproductos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .products{
+        width: 9rem;
+        margin: 0.4rem;
+        
+        &-img-top{
+            width: 9rem;
         }
     }
-    
-    
-    
-    /* MOVIL - CONTACTOS */
-    
-    @media (min-width: 320px) and (max-width: 667px) {
+}
+
+
+
+/* MOVIL - CONTACTOS */
+
+@media (min-width: 320px) and (max-width: 620px) {
     .section {
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 2rem;
         padding-top: 2rem;
-        }
     }
-    
-    
-    /* MOVIL NOSOTROS */
-    
-    @media (min-width: 320px) and (max-width: 667px) {
-    .col-md-4{
+}
+
+
+/* MOVIL NOSOTROS */
+
+@media (min-width: 320px) and (max-width: 620px) {
+    .col-md-4 {
         max-width: 100%;
-        align-items: center;
+        text-align: center;
     }
-    
+
     .row {
         margin-left: auto;
     }
-    
+
     .card-text2 {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .card-text3{
+
+    .card-text3 {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .card-body {
         padding: 0%;
         margin-left: 0%;
-    }    
     }
-    
-     /* MOVIL- MAYORISTAS */
-     @media (min-width: 320px) and (max-width: 667px) {
-     .card-title1{
+
+    .rounded-start {
+        text-align: center;
+        max-width: 60%;
+        margin-top: 1rem;
+    }
+
+    .video-responsive2{
+        width: 60%;
+        margin-top: 2rem;
+    }
+}
+
+/* MOVIL- MAYORISTAS */
+@media (min-width: 320px) and (max-width: 620px) {
+    .card-title1 {
         margin-top: 0.5rem;
         font-size: 16pt;
     }
-     .card-text{
+
+    .card-text {
         margin-top: 0%;
         margin-left: 0%;
         margin-right: 0%;
     }
-    .btnm{
+
+    .btnm {
         margin-top: 1rem;
         margin-left: 40%;
     }
-    .card-img1{
+
+    .card-img1 {
         margin-bottom: 3rem;
-        } 
-    }    
-    
-    
-     /* TABLET- INDEX */
-    
-@media (min-width: 668px) and (max-width: 940px)  {
-.combos {
+    }
+}
+
+
+/* TABLET- INDEX */
+
+@media (min-width: 621px) and (max-width: 940px) {
+    .combos {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         margin: 1rem;
-}
-    
-.combosdelmes {
-    display: flex;
-    flex-direction: column;
-    background-color: $colorPrincipal;
-    box-shadow: 5px 10px 10px #A3BEB5;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    padding: 1rem;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 2rem;
-
-    &__imagen{
-        border-radius: 10px;
-        width:250px;  
     }
-}
-        
+
+    .combosdelmes {
+        display: flex;
+        flex-direction: column;
+        background-color: $colorPrincipal;
+        box-shadow: 5px 10px 10px #A3BEB5;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        padding: 1rem;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 2rem;
+
+        &__imagen {
+            border-radius: 10px;
+            width: 250px;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-area: 1fr 1fr;
+    }
+
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        margin-left: none;
+        max-width: 940px;
+
     .footer__bem {
         text-align: center;
         color: $colorPrincipal;
@@ -224,46 +242,54 @@
         font-size: 10pt;
         grid-template-columns: 1;
     }
-    
+
     h3 {
         display: block;
         font-size: 12pt;
         font-weight: bold;
         margin-top: 1rem;
-        }
+       }
     }
-    
-    
-     /* TABLET - PRODUCTOS */
-    
-    @media (min-width: 668px) and (max-width: 1023px)  {
-    
-    .row {
-        row-gap: 2;
-        margin-left: 0;
-        justify-content: space-between;
+
+    .sectioncarousel {
+        width: 100%;
     }
-        
-    .card {
-        margin-bottom: 1rem;
-     }
-     
-     .col-md-3 {
-         width: 30%;
-     }
-    
-     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-         margin-left: 2rem;
-     }
+}
+
+
+/* TABLET - PRODUCTOS */
+
+@media (min-width: 621px) and (max-width: 940px) {
+
+    .filtro {
+        visibility: hidden;
     }
-    
-    
-    /* TABLET CONTACTO */
-    @media (min-width: 668px) and (max-width: 1023px)  {
+
+    .todosproductos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 450px 1fr 1fr 1fr;
+        margin-right: 0.2rem;
+    }
+
+    .filtro {
+        display: none;
+    }
+}
+
+
+
+/* TABLET CONTACTO */
+@media (min-width: 621px) and (max-width: 940px) {
     .ul {
         list-style-type: none;
     }
-    
+
     .section__contacto {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -271,27 +297,27 @@
         margin-right: 2rem;
         box-sizing: inherit;
     }
-    
+
     .section__imagen {
         border-radius: 10px;
-        width:300px;
+        width: 300px;
         margin-right: 1rem;
         margin-bottom: 40px;
     }
-    
+
     .section__texto {
-        text-align:center;
+        text-align: center;
         color: white;
         justify-content: left;
         margin-bottom: 40px;
         margin-left: 1rem;
     }
-    
+
     .section__formulario {
         margin-left: 800px;
         margin-bottom: 40px;
         margin-left: 1rem;
-        flex-direction:inherit;
+        flex-direction: inherit;
         box-sizing: inherit;
         background-color: #8AA678;
         border-radius: 10px;
@@ -299,37 +325,48 @@
         width: 250px;
         height: 300px;
     }
-    
+
     .formulario__titulo {
         color: white;
-        text-decoration:solid;
+        text-decoration: solid;
         font-size: 14px;
-        margin:1rem;
+        margin: 1rem;
     }
-    
+
     .formulario__datos {
         font-size: 12px;
         margin: 1rem;
-        }
     }
-    
-    /* TABLET- NOSOTROS */
-    @media (min-width: 668px) and (max-width: 1023px)  {
-    .card-title1{
+}
+
+/* TABLET- NOSOTROS */
+@media (min-width: 621px) and (max-width: 940px) {
+    .card-title1 {
         margin-top: 1rem;
     }
-    
-    .card-text3{
+
+    .card-text3 {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .card-subtitle{
-        margin-top: auto;
+
+    .card-subtitle {
+        margin-top: 2rem;
     }
-    
-    .card-text2{
+
+    .card-text2 {
         margin-left: auto;
         margin-right: auto;
-        }
     }
+
+    .img-fluid{
+        max-width: 100%;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .video-responsive2{
+        width: 100%;
+        margin-top: 3rem;
+    }
+}
