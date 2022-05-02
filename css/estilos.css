@@ -450,6 +450,8 @@ h6 {
     align-items: center; }
     .products-img-top {
       width: 9rem; }
+    .products .btn-primary {
+      font-size: 9px; }
   /* MOVIL - CONTACTOS */
   .section {
     padding-left: 1rem;
