@@ -36,8 +36,25 @@ $tipografiaBody: 'Mulish', sans-serif;
     text-decoration: none;
 }
 
-
 .btn-primary:hover{
     background-color: $colorSecundario;
     color: white;
 }
+
+.boton{
+    text-align: center;
+}
+
+.boton-mayoristas{
+    background-color: $colorSecundario;
+    color: #000000;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5%;
+    border: 0;
+    font-size: 12pt;
+}
+.boton-mayoristas:hover{
+    color: white;
+}
+

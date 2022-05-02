@@ -4,10 +4,6 @@
     padding-top: 0.5rem;
     font-size: 10pt;
 
-    &__paginas {
-        text-decoration: none;
-        color: #000000;     
-    }
     &__bem{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -22,24 +18,15 @@
     }
 } 
         
-    .footer-bem-categoria{
-            display: grid;
-            margin-left: 10px;
-            text-align: center;
-         }
-    /* .categoria__pag{
-        padding-left: none;
-    } */
-
-
 
 .copyright {
     background-color: $colorPrincipal;
     text-align: right;
     font-size: 9pt;
     color: white;
-    height: 50px;
+    height: 70px;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 10pt;
 }
 
@@ -52,6 +39,6 @@
     color: $colorPrincipal;
 }
 
-li{
-    display: block;
+.categoria-paginas{
+    padding-left: 0%;
 }
