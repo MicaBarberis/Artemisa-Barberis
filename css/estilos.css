@@ -10,7 +10,9 @@ ul {
 body {
   font-family: "Mulish", sans-serif;
   background-color: white;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 100%;
+  margin: auto; }
 
 h1, h2 {
   color: #579684;
@@ -24,7 +26,7 @@ h3 {
   font-family: "Playfair Display", serif;
   color: #579684;
   font-size: 14pt;
-  text-align: center;
+  text-align: justify;
   margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 30px; }
@@ -60,7 +62,9 @@ h6 {
   color: black;
   font-size: 12pt;
   margin-bottom: 5pt;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-left: 3rem;
+  padding-right: 5rem; }
 
 .form-control {
   font-family: "Mulish", sans-serif;
@@ -85,7 +89,7 @@ h6 {
   margin-right: auto; }
 
 .video-responsive2 {
-  width: 70%; }
+  width: 100%; }
 
 .serum {
   text-align: center; }
@@ -101,10 +105,6 @@ h6 {
   display: flex;
   margin-right: 1rem;
   justify-content: center; }
-
-.filtro {
-  margin-left: 5rem;
-  margin-right: 5rem; }
 
 .tittle-mayoristas {
   background-color: #579684;
@@ -233,6 +233,9 @@ h6 {
     position: relative; }
 
 /* PRODUCTOS */
+.contenedor-productos {
+  display: flex; }
+
 .products {
   border-radius: 20px;
   border: 1px solid #b7c2bf;
@@ -257,8 +260,8 @@ h6 {
     color: #8AA678; }
 
 .todosproductos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-rows: auto; }
 
 /* NOSOTROS */
@@ -307,7 +310,6 @@ h6 {
   border-radius: 10px;
   opacity: 90%;
   padding-right: 0.5rem;
-  margin-right: 0.5rem;
   margin-top: 1rem; }
 
 /* MAYORISTAS */
@@ -412,12 +414,11 @@ h6 {
     grid-template-columns: 1fr;
     grid-area: 1fr 1fr 1fr; }
   .footer__bem {
-    text-align: center;
-    margin-top: 1rem;
-    color: #579684;
-    font-family: "Mulish", sans-serif;
-    font-size: 10pt;
-    grid-template-columns: 1; }
+    flex-wrap: wrap; }
+    .footer__bem__categoria1 .footer__bem__categoria2 .footer__bem__categoria3 {
+      text-align: center;
+      padding-right: 3rem;
+      padding-left: 3rem; }
   h3 {
     display: block;
     font-size: 12pt;
@@ -441,7 +442,7 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
-  .contenedor {
+  .contenedor-productos {
     display: flex;
     justify-content: center; }
   .products {
@@ -521,12 +522,11 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
-  .contenedor {
+  .contenedor-productos {
     display: flex;
     justify-content: center; }
   .filtro {
-    margin-left: 1rem;
-    margin-right: 2rem; }
+    padding-right: 0.5rem; }
   .products {
     margin: 0.5rem; }
   /* TABLET CONTACTO */
@@ -582,8 +582,23 @@ h6 {
     margin-bottom: 3rem; }
   .video-responsive2 {
     width: 100%;
-    margin-top: 3rem;
-    opacity: 90%; }
+    margin-top: 2rem;
+    opacity: 90%;
+    display: block;
+    margin: auto; }
+  .img-nosotros {
+    max-width: 100%;
+    display: block;
+    margin: auto; }
+  .nosotros-mb-3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem; }
+  .col-md-4 {
+    margin: auto;
+    padding-left: 1rem; }
   /* TABLET - MAYORISTAS */
   .card-text {
     line-height: normal;
@@ -618,18 +633,33 @@ h6 {
   margin-bottom: 0; }
 
 .footer {
+  display: flex;
+  width: 100%;
   background-color: #cee9e0;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
-  font-size: 10pt; }
+  font-size: 10pt;
+  justify-content: center; }
   .footer__bem {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
-    text-align: center;
-    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
     color: #000000;
-    font-family: "Mulish", sans-serif; }
+    font-family: "Mulish", sans-serif;
+    justify-content: space-between; }
+    .footer__bem__categoria1 {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      max-width: 400px; }
+    .footer__bem__categoria2 {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      max-width: 400px; }
+    .footer__bem__categoria3 {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      max-width: 400px; }
   .footer__img-redes {
     justify-self: center; }
 

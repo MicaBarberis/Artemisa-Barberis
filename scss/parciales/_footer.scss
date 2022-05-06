@@ -1,17 +1,36 @@
 .footer {
+    display: flex;
+    width: 100%;
     background-color:#cee9e0;
     padding-bottom: 1rem;
     padding-top: 0.5rem;
     font-size: 10pt;
+    justify-content: center;
 
     &__bem{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr;
-        text-align: center;
-        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
         color: #000000;
         font-family: $tipografiaBody;
+        justify-content: space-between;
+
+        &__categoria1{
+            padding-right: 3rem;
+            padding-left: 3rem;
+            max-width: 400px;
+        }
+        &__categoria2{
+            padding-right: 3rem;
+            padding-left: 3rem;
+            max-width: 400px;
+        }
+        &__categoria3{
+            padding-right: 3rem;
+            padding-left: 3rem;
+            max-width: 400px;
+        }
     }
     &__img-redes {
         justify-self: center;

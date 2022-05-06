@@ -70,6 +70,9 @@ $tipografiaBody: 'Mulish', sans-serif;
 
 
 /* PRODUCTOS */
+.contenedor-productos{
+    display: flex;
+}
 
 .products {
     border-radius: 20px;
@@ -101,8 +104,8 @@ $tipografiaBody: 'Mulish', sans-serif;
 }
 
 .todosproductos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+display: flex;
+flex-wrap: wrap;
     grid-template-rows: auto;
 }
 
@@ -155,7 +158,6 @@ $tipografiaBody: 'Mulish', sans-serif;
     border-radius: 10px;
     opacity: 90%;
     padding-right: 0.5rem;
-    margin-right: 0.5rem;
     margin-top: 1rem;
 }
 
