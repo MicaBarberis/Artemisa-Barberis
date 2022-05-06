@@ -221,9 +221,7 @@
 
 
     /* TABLET - PRODUCTOS */
-
-
-    .todosproductos {
+     .todosproductos {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -240,6 +238,9 @@
 
     .products{
         margin: 0.5rem;
+    }
+    .btn-primary{
+        font-size: 9px;
     }
 
 
