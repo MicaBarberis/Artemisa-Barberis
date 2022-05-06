@@ -184,8 +184,8 @@ h6 {
 
 /* ÍNDEX */
 .combos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 2rem; }
