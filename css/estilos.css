@@ -111,6 +111,20 @@ h6 {
   color: white;
   padding: 2rem; }
 
+.bi-basket3-fill {
+  margin-right: 130px;
+  width: 30px;
+  height: 30px; }
+
+.miCarrito {
+  font-size: 10pt;
+  margin-bottom: 0%;
+  margin-right: 130px;
+  color: dimgrey; }
+
+.carrito {
+  text-align: center; }
+
 .container-fluid {
   background-color: aliceblue; }
 
