@@ -46,7 +46,7 @@ function Menu () {
             buscarProducto();
         }
         case 5:{
-            mostrarProducto()
+            mostrarProductos()
         }
         default: {
             alert ("Opción inválida");
@@ -63,6 +63,7 @@ function agregarProducto() {
         let nombre = prompt ("Agregue un producto:")
         let precio = prompt ("Precio:")
         let producto = new Producto (id, nombre, precio)
+        return producto
 
         productos.push(producto);
 }   
@@ -89,7 +90,7 @@ function eliminarProducto() {
 }
 
 function modificarProductos(){
-    let id= Number(prompt("Ingrese el id delproducto que desee modificar"));
+    let id= Number(prompt("Ingrese el id del producto que desee modificar"));
 
    let existe = productos.some((producto)=>producto.id===id);
 
@@ -119,26 +120,19 @@ function buscarProducto (){
     console.log(encontrados);
 }
 
-function mostrarProducto(){
-    {
-        let miLista = document.querySelector("#mostrarProductos");
-        if(!miLista)
-        {
-          miLista = document.createElement("ul");
-          miLista.setAttribute("id", "mostrarProductos");
-        }
-        miLista.innerHTML="";
-     
-        
-        productos.forEach((producto)=>{
-            const nodoli = document.createElement("li");
-            nodoli.innerHTML=`${producto.nombre} ${producto.precio}`;
-            miLista.appendChild(nodoli);
-        });
-     
-        document.body.appendChild(miLista);
-     }
+
+function mostrarProductos(){
+    for (const producto of productos){
+        let contenedor = document.createElement("div")
+        contenedor.innerHTML = `<h3><b> Id </b> ${producto.id} </h3>
+                                <p><b> Nombre </b> ${producto.nombre} </p>
+                                <p><b> Precio </b> ${producto.precio} </p>`
 }
+}
+document.body.appendChild(contenedor)
+mostrarProductos(producto)
+
+
 
 function inicializarAplicacion()
 {
