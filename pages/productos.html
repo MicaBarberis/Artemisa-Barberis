@@ -27,9 +27,6 @@
   <link rel="shortcut icon" href="../img/logosinfondo.png">
 
 
-  <script defer src="../JS/mouse.js"></script>
-
-
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -81,10 +78,10 @@
                 <a class="nav-link" href="./mayoristas.html">Mayoristas</a>
               </li>
         </ul>
-        <a class="miCarrito" href="/pages/carrito.html">
+        <a class="miCarrito" href="../pages/carrito.html">
           <div class="carrito">
-           <img class="img-carrito" src="/img/cart.svg" alt="carrito"></a>
-            <p class="miCarrito">Mi carrito</p>
+            <i class="fa-regular fa-cart-shopping" href = "carrito.html" ></i>
+           <p class="circle" id="circle">0</p>
           </div>
         </a>
             <form class="d-flex">
@@ -106,199 +103,13 @@
       </nav>
       <h1><strong>Productos</strong></h1>
 
-      <!-- FILTROS -->
-      <div class="contenedor-productos">
-        <div class="filtro">
-          <h4>Categorías</h4>
-          <ul class="lista-filtro">
-            <li data-item="1" class="mb-4">
-              <a href="" title="Linea capilar" class="btn-link">Línea capilar</a>
-            </li>
-            <li data-item="2" class="mb-4">
-              <a href="" title="Linea facial" class="btn-link">Línea facial</a>
-            </li>
-            <li data-item="3" class="mb-4">
-              <a href="" title="Linea corporal" class="btn-link">Línea corporal</a>
-            </li>
-            <li data-item="4" class="mb-4">
-              <a href="" title="Linea cuidado e higiene" class="btn-link">Línea cuidado e higiene</a>
-            </li>
-            <li data-item="5" class="mb-4">
-              <a href="" title="Accesorios Bio" class="btn-link">Accesorios Bio</a>
-            </li>
-          </ul>
-          <h4>Filtrar por</h4>
-          <p class="list-filtro"><strong> Tamaño </strong></p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              <p class="list-text">60gr</p>
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              <p class="list-text">100gr</p>
-            </label>
-          </div>
-          <p class="list-filtro"><strong> Variedad </strong></p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              <p class="list-text">Cabellos normales</p>
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              <p class="list-text">Cabellos grasos</p>
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              <p class="list-text">Cabellos secos</p>
-            </label>
-          </div>
-        </div>
 
 
         <!-- GRILLA DE PRODUCTOS -->
 
-        <div class="todosproductos">
-          <div class="products">
-            <img src="../img/1.jpg" class="products-img-top" alt="Champú sólido Coco y almendras">
-            <div class="products-nomber">
-              <h6>Champú sólido Coco y almendras</h6>
-              <p class="products-precio"> $450</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/2.jpg" class="products-img-top" alt="Champú sólido Argán y karité">
-            <div class="products-nomber">
-              <h6>Champú sólido Argán y karité</h6>
-              <p class="products-precio"> $450</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/3.jpg" class="products-img-top" alt="Champú sólido Jojoba y bentonita">
-  
-          <div class="products-nomber">
-            <h6>Champú sólido Jojoba y bentonita</h6>
-            <p class="products-precio"> $450</p>
-            <a href="#" class="btn-primary">Añadir al carrito</a>
-          </div>
-          </div>
-          <div class="products">
-            <img src="../img/4.jpg" class="products-img-top" alt="Acondicionador sólido">
-            <div class="products-nomber">
-              <h6>Acondicionador sólido</h6>
-              <p class="products-precio"> $480</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/5.jpg" class="products-img-top" alt="Champú sólido Anticaída">
-            <div class="products-nomber">
-              <h6>Champú sólido Ortiga y romero</h6>
-              <p class="products-precio"> $470</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/6.jpg" class="products-img-top" alt="Champú sólido Manzanilla y avena">
-            <div class="products-nomber">
-              <h6>Champú sólido Manzanilla y avena</h6>
-              <p class="products-precio"> $470</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/7.jpg" class="products-img-top" alt="Jabón corporal Rosa mosqueta">
-            <div class="products-nomber">
-              <h6>Jabón corporal Rosa mosqueta</h6>
-              <p class="products-precio"> $330</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/8.jpg" class="products-img-top" alt="Jabón corporal Palta y amapola">
-            <div class="products-nomber">
-              <h6>Jabón corporal Palta y amapola</h6>
-              <p class="products-precio"> $330</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/9.jpg" class="products-img-top" alt="Jabón corporal karité">
-            <div class="products-nomber">
-              <h6>Jabón corporal karité</h6>
-              <p class="products-precio"> $330</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/10.jpg" class="products-img-top" alt="Tónico facial Ágata">
-            <div class="products-nomber">
-              <h6>Tónico facial Ágata</h6>
-              <p class="products-precio"> $450</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/11.jpg" class="products-img-top" alt="Tónico facial Glow">
-            <div class="products-nomber">
-              <h6>Tónico facial Glow</h6>
-              <p class="products-precio"> $400</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/12.jpg" class="products-img-top" alt="Agua micelar">
-            <div class="products-nomber">
-              <h6>Agua micelar</h6>
-              <p class="products-precio"> $400</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/13.jpg" class="products-img-top" alt="Sérum facial Nocturno">
-            <div class="products-nomber">
-              <h6>Sérum facial Nocturno</h6>
-              <p class="products-precio"> $700</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/14.jpg" class="products-img-top" alt="Sérum facial Ácido hialurónico">
-            <div class="products-nomber">
-              <h6>Sérum facial Ácido hialurónico</h6>
-              <p class="products-precio"> $900</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/15.jpg" class="products-img-top" alt="Crema de manos">
-            <div class="products-nomber">
-              <h6>Crema de manos</h6>
-              <p class="products-precio"> $500</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-          <div class="products">
-            <img src="../img/16.jpg" class="products-img-top" alt="BB Cream">
-            <div class="products-nomber">
-              <h6>BB Cream</h6>
-              <p class="products-precio"> $950</p>
-              <a href="#" class="btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-        </div>    
-      </div>
-    </section>
-  </main>
+
+
+
 
 
   <footer class="footer">
@@ -340,6 +151,15 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<!-- JS -->
+<script src="../JS/main.js"></script>
+<script src="../JS/carrito.js"></script>
+<script src="../JS/productos.js"></script>
+<script src="../JS/producto.class.js"></script>
+
+
 
 </body>
 

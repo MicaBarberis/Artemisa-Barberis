@@ -97,7 +97,7 @@
         visibility: hidden;
     }
 
-    .todosproductos {
+    .ecommerceMain {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -108,18 +108,20 @@
         justify-content: center;
     }
 
-    .products{
+    .cardProducts{
         width: 9.1rem;
         margin: 0.4rem;
         align-items: center;
+    }
         
-        &-img-top{
+    .productImage{
             width: 9rem;
         }
-        .btn-primary{
+
+    .btn-primary{
             font-size: 9px;
         }
-    }
+    
 
 
 
@@ -221,7 +223,7 @@
 
 
     /* TABLET - PRODUCTOS */
-     .todosproductos {
+     .ecommerceMain {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -236,7 +238,7 @@
         padding-right: 0.5rem;
     }
 
-    .products{
+    .cardProducts{
         margin: 0.5rem;
     }
     .btn-primary{

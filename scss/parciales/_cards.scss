@@ -74,36 +74,37 @@ $tipografiaBody: 'Mulish', sans-serif;
     display: flex;
 }
 
-.products {
+.cardProducts {
     border-radius: 20px;
     border: 1px solid #b7c2bf;
     margin: 1rem;
     box-sizing: inherit; 
     width: 10rem;
+}
 
-    &-nomber {
+.productsNomber {
         font-family: $tipografiaBody;
         font-size: 12pt;
         text-align: center;
         color: black;
         padding: 30px;    
     }
-    &-img-top {
+.productImage {
         width: 100%;
         border-top-left-radius:  20px;
         border-top-right-radius: 20px;
     }
 
-    &-precio{
+.productPrice{
         font-family: $tipografiaBody;
         padding-top: 0.5rem;
         font-weight: 600;
         font-size: 20px;
         color: #8AA678;
+        text-align: center;
     }
-}
 
-.todosproductos{
+.ecommerceMain{
 display: flex;
 flex-wrap: wrap;
     grid-template-rows: auto;

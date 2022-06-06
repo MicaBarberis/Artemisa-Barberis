@@ -1,14 +1,14 @@
-function inicializarAplicacion(){
+/* function inicializarAplicacion(){
     crearTitulo()
     crearMenu()
 }
-
+ */
 function crearTitulo (){
     const tituloH1 = document.createElement("h1")
     tituloH1.innerHTML= "Mi carrito"
     document.body.appendChild(tituloH1)
 }
-function crearMenu (){
+/* function crearMenu (){
 
     let opciones = ["Mostrar productos", "Agregar productos", "Buscar productos"]
     opciones.forEach((opcion) => {
@@ -36,4 +36,24 @@ function crearMenu (){
 
         document.body.appendChild (boton)
 })
+} */
+
+let carrito = {}
+
+const buttonDetect = (data) => {
+    const buttons = document.querySelectorAll (`.buttonActions`)
+
+    buttons.forEach((button) => {
+        button.addEventListener ('click', () => {
+            const productos = data.find(items => items.id == button.id)
+            if(!productos.quantity) {
+                productos.quantity = 1
+            }
+            carrito[producto.id] = {... productos}
+
+            addProductToCarrito()
+        })
+    })
 }
+
+let carritoContainer = {}

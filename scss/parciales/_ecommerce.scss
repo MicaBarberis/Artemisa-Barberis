@@ -1,0 +1,152 @@
+$colorPrincipal: #579684;
+$colorSecundario: #8AA678;
+$colorTerciario: #A3BEB5;
+$tipografiaTitulos: 'Playfair Display', serif;
+$tipografiaBody: 'Mulish', sans-serif;
+
+.carritoContainer{
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 200px; 
+    margin: 20px;
+    justify-content: center;
+}
+
+.titleDisplayNone {
+    justify-content: center;
+    font-size: 30px;
+    color: darkgrey;
+}
+.titleDisplayNone2{
+    justify-content: center;
+    font-size: 30px;
+    color: darkgrey;
+}
+
+.cardDetails{
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+.productsTitle{
+    padding-left: 20px;
+    font-weight: 600;
+    margin-bottom: 0%;
+}
+
+.imgCarrito{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.productsDetails {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cantProduct{
+    display: flex;
+    align-items: center;
+}
+
+.controlButtons{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid $colorTerciario;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+    
+.menosProduct{
+    font-size: 40px;
+    font-weight: 400;
+    color: $colorPrincipal;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+.masProduct{
+    font-size: 30px;
+    font-weight: 400;
+    color: $colorPrincipal;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+.numberInput{
+    margin-bottom: 0%;
+    font-weight: 600;
+}
+
+.productPrice{
+    font-size: 12pt;
+    font-weight: 600;
+/*     margin-left: 30px;
+    margin-bottom: 0%; */
+}
+
+.monto{
+    border-top: $colorSecundario solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.totalMonto{
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.buttonCompra{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 40px;
+}
+.buttonConfirm{
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: $colorPrincipal;    
+    padding: 10px;
+    font-size: 12pt;
+}
+.buttonConfirm:hover{
+    background-color: $colorSecundario;
+}
+.buttonDelete{
+    padding-top: 1rem;
+    font-size: 10pt;
+    color: black;
+    font-weight: 600;
+}
+.buttonDelete:hover{
+    color: $colorTerciario;
+}
+
+.imgCarritoVacio{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.titleDisplayNone{
+    text-align: center;
+    margin-top: 2rem;
+}
+.titleDisplayNone2{
+    text-align: center;
+    font-size: 14pt;
+    color:darkgray;
+}
