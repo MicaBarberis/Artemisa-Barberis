@@ -262,17 +262,21 @@ h6 {
     position: relative; }
 
 /* PRODUCTOS */
-.contenedor-productos {
-  display: flex; }
+.ecommerceContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2%;
+  margin-left: 30%; }
 
-.cardProducts {
+div .cardProducts {
   border-radius: 20px;
   border: 1px solid #b7c2bf;
   margin: 1rem;
   box-sizing: inherit;
   width: 10rem; }
 
-.productsNomber {
+div .card productsNomber {
   font-family: "Mulish", sans-serif;
   font-size: 12pt;
   text-align: center;

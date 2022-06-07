@@ -70,11 +70,15 @@ $tipografiaBody: 'Mulish', sans-serif;
 
 
 /* PRODUCTOS */
-.contenedor-productos{
+.ecommerceContainer{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2%;
+    margin-left: 30%;
 }
 
-.cardProducts {
+div .cardProducts {
     border-radius: 20px;
     border: 1px solid #b7c2bf;
     margin: 1rem;
@@ -82,7 +86,7 @@ $tipografiaBody: 'Mulish', sans-serif;
     width: 10rem;
 }
 
-.productsNomber {
+div .card productsNomber {
         font-family: $tipografiaBody;
         font-size: 12pt;
         text-align: center;
