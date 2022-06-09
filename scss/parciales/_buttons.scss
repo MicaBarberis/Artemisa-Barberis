@@ -27,14 +27,22 @@ $tipografiaBody: 'Mulish', sans-serif;
     font-size: 12pt;
 }
 
+.button{
+    align-items: center;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
 .btn-primary{
     background-color: $colorTerciario;
     color: white;
     border-radius: 10px;
+    border-color: $colorTerciario;
     padding: 0.5rem;
     font-size: 12px;
     text-decoration: none;
     width: auto;
+    text-align: center;
 }
 
 .btn-primary:hover{

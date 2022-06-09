@@ -70,45 +70,42 @@ $tipografiaBody: 'Mulish', sans-serif;
 
 
 /* PRODUCTOS */
-.ecommerceContainer{
+.contenedor-productos{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2%;
-    margin-left: 30%;
 }
 
-div .cardProducts {
+.products {
     border-radius: 20px;
     border: 1px solid #b7c2bf;
     margin: 1rem;
     box-sizing: inherit; 
     width: 10rem;
-}
 
-div .card productsNomber {
+    &-nomber {
         font-family: $tipografiaBody;
         font-size: 12pt;
         text-align: center;
         color: black;
-        padding: 30px;    
+        padding-top: 20px;
+        padding-bottom: 10px; 
     }
-.productImage {
+    &-img-top {
         width: 100%;
         border-top-left-radius:  20px;
         border-top-right-radius: 20px;
     }
 
-.productPrice{
+    &-precio{
         font-family: $tipografiaBody;
         padding-top: 0.5rem;
+        text-align: center;
         font-weight: 600;
         font-size: 20px;
         color: #8AA678;
-        text-align: center;
     }
+}
 
-.ecommerceMain{
+.todosproductos{
 display: flex;
 flex-wrap: wrap;
     grid-template-rows: auto;
